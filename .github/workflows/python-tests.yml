@@ -33,10 +33,4 @@ jobs:
       run: |
         coverage run --source=. CalcTest.py
         coverage report -m
-        coverage xml
-    
-    - name: Upload coverage to Codecov
-      uses: codecov/codecov-action@v3
-      with:
-        file: ./coverage.xml
-        fail_ci_if_error: true
+        
