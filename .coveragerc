@@ -1,0 +1,18 @@
+[run]
+source = .
+omit = 
+    .github/*
+    __pycache__/*
+    */__pycache__/*
+    */site-packages/*
+    .venv/*
+    venv/*
+
+[report]
+exclude_lines =
+    pragma: no cover
+    def __repr__
+    raise NotImplementedError
+    if __name__ == .__main__.:
+    pass
+    raise ImportError
